@@ -95,12 +95,14 @@ def main():
             prompt_completo = criar_prompt_pet(pergunta)
             response = model.generate_content(prompt_completo)
             
-            # Formatação visual da resposta
-            print("\r" + "─" * 50)
-            print("🤖 PETLOVE BOT:")
-            print("─" * 50)
+            # Formatação visual melhorada da resposta
+            print("\r" + "╔" + "═" * 58 + "╗")
+            print("║" + " " * 20 + "🤖 PETLOVE BOT" + " " * 20 + "║")
+            print("╚" + "═" * 58 + "╝")
+            print()
             print(f"{response.text}")
-            print("─" * 50 + "\n")
+            print()
+            print("─" * 60 + "\n")
             
             historico.append({
                 'pergunta': pergunta,
