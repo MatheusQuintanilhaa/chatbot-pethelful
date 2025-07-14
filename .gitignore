@@ -1,0 +1,22 @@
+# Arquivos com informações sensíveis - NUNCA SUBIR!
+config_api.py
+.env
+*_key.py
+api_keys.txt
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
