@@ -1,4 +1,4 @@
-# 🐾 Chatbot Petlove - Projeto de Estágio
+# 🐾 Chatbot PetHelpful
 
 Um chatbot simples feito com Python e Google Gemini AI para ajudar donos de pets!
 
