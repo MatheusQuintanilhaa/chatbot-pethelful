@@ -1,6 +1,6 @@
-# Chatbot Petlove - Projeto de Estágio
+# PetHelpful - Chatbot para Cuidados com Pets
 # Autor: Matheus Quintanilha
-# Descrição: Chatbot simples usando IA generativa para cuidados com pets
+# Descrição: Chatbot inteligente usando IA generativa para auxiliar no cuidado de pets
 
 import google.generativeai as genai
 import os
@@ -44,7 +44,7 @@ def criar_prompt_pet(mensagem_usuario):
 def main():
     """Função principal do chatbot"""
     print("╔" + "═" * 48 + "╗")
-    print("║" + " " * 15 + "🐾 CHATBOT PETLOVE 🐾" + " " * 15 + "║")
+    print("║" + " " * 16 + "🐾 PETHELPFUL 🐾" + " " * 16 + "║")
     print("╚" + "═" * 48 + "╝")
     print("🌟 Olá! Sou um assistente virtual especializado em pets!")
     print("💡 Faça perguntas sobre cuidados com seu bichinho 🐕🐱")
@@ -67,8 +67,8 @@ def main():
 
             if pergunta.lower() in ['sair', 'exit']:
                 print("\n╔" + "═" * 40 + "╗")
-                print("║" + " " * 6 + "🐾 OBRIGADO POR USAR O" + " " * 7 + "║")
-                print("║" + " " * 9 + "CHATBOT PETLOVE! 🐾" + " " * 9 + "║")
+                print("║" + " " * 8 + "🐾 OBRIGADO POR USAR O" + " " * 9 + "║")
+                print("║" + " " * 12 + "PETHELPFUL! 🐾" + " " * 12 + "║")
                 print("║" + " " * 11 + "Cuide bem do seu pet!" + " " * 10 + "║")
                 print("╚" + "═" * 40 + "╝")
                 break
@@ -99,7 +99,7 @@ def main():
 
             # Formatação visual melhorada da resposta
             print("\r" + "╔" + "═" * 58 + "╗")
-            print("║" + " " * 20 + "🤖 PETLOVE BOT" + " " * 20 + "║")
+            print("║" + " " * 20 + "🤖 PETHELPFUL BOT" + " " * 19 + "║")
             print("╚" + "═" * 58 + "╝")
             print()
 
@@ -131,7 +131,7 @@ def main():
 
         except KeyboardInterrupt:
             print("\n\n🐾 Chat encerrado pelo usuário! Até logo! 🐾")
-            print("💙 Obrigado por testar o Chatbot Petlove!")
+            print("💙 Obrigado por testar o PetHelpful!")
             break
         except Exception as e:
             print(f"\n❌ Erro: {e}")
