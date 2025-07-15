@@ -1,127 +1,112 @@
-# 🐾 Chatbot Petlove - Projeto de Estágio
+# 🐾 PetHelpful - Chatbot para Cuidados com Pets
 
-Um chatbot simples feito com Python e Google Gemini AI para ajudar donos de pets!
+Um chatbot inteligente desenvolvido em Python que utiliza IA generativa (Google Gemini) para fornecer orientações sobre cuidados com pets. Projeto criado com foco em boas práticas de desenvolvimento e segurança.
 
-## 💡 Por que criei isto?
+## ✨ Funcionalidades
 
-Vi a vaga de estágio na Petlove e quis mostrar meu interesse em **IA generativa** e **chatbots**. Mesmo sendo iniciante em Python, queria demonstrar que tenho curiosidade e vontade de aprender sobre tecnologias de IA!
+- 🤖 **IA Especializada**: Respostas contextualizadas sobre cuidados com cães e gatos
+- 🔒 **Segurança**: Configuração segura de API keys
+- 📜 **Histórico**: Acompanhe suas conversas anteriores
+- 🎨 **Interface Visual**: Layout elegante no terminal
+- 💡 **Respostas Concisas**: Informações diretas e práticas
 
-## 🚀 O que o chatbot faz?
+## 🚀 Como Usar
 
-- 💬 Conversa sobre cuidados com pets (cães e gatos)
-- 📚 Guarda um histórico das conversas (usando listas e dicionários)
-- 🤖 Usa a API do Google Gemini para gerar respostas inteligentes
-- 🐕 Foca em temas relacionados a saúde e cuidados com animais
-
-## 📁 Estrutura do projeto
-
-```text
-chatbot-petlove/
-├── script.py                 # Código principal do chatbot
-├── config_api_example.py     # Exemplo de configuração (vai pro GitHub)
-├── config_api.py            # Sua chave real (NÃO vai pro GitHub)
-├── requirements.txt          # Dependência: google-generativeai
-├── .gitignore               # Proteção de arquivos sensíveis
-└── README.md                # Esta documentação
-```
-
-## 🛠️ Como executar
-
-### Pré-requisitos
-
-- Python 3.8 ou superior
-- Chave da API do Google Gemini ([obter aqui](https://aistudio.google.com/app/apikey))
-
-### Passos para executar
-
-1. **Baixar o projeto**
+### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/MatheusQuintanilhaa/chatbot-petlove-estagio.git
-cd chatbot-petlove-estagio
+git clone https://github.com/MatheusQuintanilhaa/chatbot-pethelful.git
+cd chatbot-pethelful
 ```
 
-2. **Instalar a biblioteca necessária**
+### 2. Instale as dependências
 
 ```bash
-pip install google-generativeai
+pip install -r requirements.txt
 ```
 
-3. **Configurar a API Key (SEGURO)**
+### 3. Configure sua API Key
 
 ```bash
 # Copie o arquivo de exemplo
-cp config_api_example.py config_api.py
+copy config_api_example.py config_api.py
 
-# Edite config_api.py e substitua por sua chave real
-# GOOGLE_API_KEY = "sua_chave_aqui"
+# Edite config_api.py e adicione sua chave do Google Gemini
+# Obtenha sua chave em: https://aistudio.google.com/app/apikey
 ```
 
-4. **Executar o chatbot**
+### 4. Execute o chatbot
 
 ```bash
 python script.py
 ```
 
-**🔒 SEGURANÇA GARANTIDA:**
-
-- Sua chave fica em `config_api.py` (protegido pelo .gitignore)
-- O arquivo nunca será enviado para o GitHub
-- Código principal (`script.py`) fica limpo e seguro
-
-## 🎯 Conceitos Python que usei
-
-Como estou aprendendo Python, pratiquei:
-
-- **Funções**: `configurar_gemini()`, `criar_prompt_pet()`
-- **Listas**: para guardar o histórico de conversas
-- **Dicionários**: para organizar perguntas e respostas
-- **Loops**: `while True` para manter o chat funcionando
-- **Condicionais**: `if/else` para comandos especiais
-- **Tratamento de erros**: `try/except` básico
-- **APIs**: conexão com Google Gemini AI
-
-## 💭 Exemplo de uso
+## 🔧 Estrutura do Projeto
 
 ```text
-🐾 === CHATBOT PETLOVE === 🐾
-👤 Você: Meu gato está bebendo muita água, é normal?
-
-🤖 Bot: Beber muita água pode indicar alguns problemas de saúde
-como diabetes ou problemas renais. É importante observar outros
-sintomas e consultar um veterinário...
-
-👤 Você: historico
-📜 === HISTÓRICO ===
-1. Você: Meu gato está bebendo muita água, é normal?
-   Bot: Beber muita água pode indicar alguns problemas...
+pethelpful/
+├── script.py                 # Aplicação principal
+├── config_api_example.py     # Exemplo de configuração
+├── config_api.py            # Sua configuração (não versionado)
+├── requirements.txt          # Dependências Python
+├── .gitignore               # Arquivos ignorados pelo Git
+└── README.md                # Documentação
 ```
 
-## 🎓 O que aprendi fazendo este projeto
+## 🛡️ Segurança
 
-- Como conectar com APIs de IA generativa
-- Conceitos básicos de LLMs (Large Language Models)
-- Estruturação de código Python mais organizada
-- Como criar prompts efetivos para IA
-- Manipulação de dados com listas e dicionários
+- ✅ **API Key protegida**: Arquivo `config_api.py` não é versionado
+- ✅ **Exemplo fornecido**: Template em `config_api_example.py`
+- ✅ **Validação**: Verificação de configuração na inicialização
 
-## 🚧 Próximos passos (se eu conseguir o estágio! 😊)
+### ⚠️ Checklist de Segurança
 
-- Aprender mais sobre LangChain
-- Melhorar o tratamento de erros
-- Adicionar mais funcionalidades pet-friendly
-- Estudar sobre RAG (Retrieval-Augmented Generation)
+- [ ] Copiei `config_api_example.py` para `config_api.py`
+- [ ] Adicionei minha chave real em `config_api.py`
+- [ ] Verifiquei que `config_api.py` está no `.gitignore`
+- [ ] **NUNCA** commitei minha chave real no Git
 
-## 🔧 Tecnologias utilizadas
+## 💡 Exemplos de Uso
 
-- **Python 3.8+**: Linguagem de programação
-- **Google Gemini AI**: Modelo de IA generativa (gemini-1.5-flash)
-- **VS Code**: Editor de código
+```text
+👤 Você: Meu cachorro não quer comer
+🤖 Bot: Isso pode ter várias causas. Verifique se a ração não estragou, 
+        tente mudar o horário da alimentação e observe se há outros 
+        sintomas. Se persistir por mais de 24h, consulte um veterinário.
+
+👤 Você: Como dar banho em gato?
+🤖 Bot: Use água morna, shampoo específico para gatos e seja muito 
+        gentil. Prepare tudo antes, mantenha calmo e recompense após. 
+        Muitos gatos se limpam sozinhos, então só é necessário se 
+        estiver muito sujo.
+```
+
+## 🎯 Comandos Especiais
+
+- `historico` - Ver conversas anteriores
+- `sair` ou `exit` - Encerrar o chat
+
+## 🛠️ Tecnologias
+
+- **Python 3.8+**: Linguagem principal
+- **Google Generative AI**: Modelo Gemini 1.5 Flash
+- **Type Hints**: Código mais legível e maintível
+- **Tratamento de Erros**: Experiência robusta do usuário
+
+## 📝 Desenvolvimento
+
+Este projeto demonstra:
+
+- Integração com APIs de IA
+- Boas práticas de segurança
+- Estrutura de código profissional
+- Documentação completa
+- Controle de versão com Git
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 ---
 
-**Desenvolvido por Matheus Quintanilha**
-
-_"Onde tem pet, tem love — só falta você!"_
-
-Este é meu primeiro projeto com IA generativa e estou muito animado para aprender mais na Petlove! 🐾
+💙 **Desenvolvido com carinho para ajudar você a cuidar melhor do seu pet!**
