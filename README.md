@@ -70,14 +70,14 @@ pethelpful/
 
 ```text
 👤 Você: Meu cachorro não quer comer
-🤖 Bot: Isso pode ter várias causas. Verifique se a ração não estragou, 
-        tente mudar o horário da alimentação e observe se há outros 
+🤖 Bot: Isso pode ter várias causas. Verifique se a ração não estragou,
+        tente mudar o horário da alimentação e observe se há outros
         sintomas. Se persistir por mais de 24h, consulte um veterinário.
 
 👤 Você: Como dar banho em gato?
-🤖 Bot: Use água morna, shampoo específico para gatos e seja muito 
-        gentil. Prepare tudo antes, mantenha calmo e recompense após. 
-        Muitos gatos se limpam sozinhos, então só é necessário se 
+🤖 Bot: Use água morna, shampoo específico para gatos e seja muito
+        gentil. Prepare tudo antes, mantenha calmo e recompense após.
+        Muitos gatos se limpam sozinhos, então só é necessário se
         estiver muito sujo.
 ```
 
